@@ -3,7 +3,6 @@ package com.example.listofjson.interactor;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.listofjson.recycle.DataAdapter;
 import com.example.listofjson.view.MainActivity;
 
 import com.example.listofjson.repository.JsonPlaceholderParser;
@@ -35,8 +34,7 @@ public class UserInteractor implements UserResponse {
     public void reponse(ArrayList userList) {
 
         MainActivity.updateData(userList);
-        System.out.println("Пользователь в главном потоке" );
-//        textView.setText(textView.getText().toString() + user.name);
+
     }
 }
 
